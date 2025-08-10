@@ -1,0 +1,30 @@
+.message-contianer {
+    padding: 1rem;
+
+    .msg-form {
+        display: flex;
+        gap: 0.5rem;
+
+        .text {
+            flex: 1;
+            padding: 0.5rem 1rem;
+            border: 1px solid #f5f7f3;
+            border-radius: 1rem;
+        }
+
+        .btn {
+            background-color: #00d757;
+            color: #fff;
+            padding: 0.5rem 1rem;
+            border-radius: 1rem;
+            transition: background-color 0.3s;
+            cursor: pointer;
+
+            &:hover {
+                background-color: #43ff8e;
+            }
+        }
+
+    }
+
+}
