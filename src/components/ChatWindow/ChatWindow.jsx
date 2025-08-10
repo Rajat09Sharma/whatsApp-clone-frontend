@@ -136,9 +136,10 @@ export default function ChatWindow({ wa_id, name, roomId }) {
               })}
             </div>
           </div>
-
-          {isLoading && <p>Loading message......</p>}
-          {!isLoading && isError && <p>Error in loading message.</p>}
+          <div className="info-container">
+            {isLoading && <p className="loading-message">Loading messages......</p>}
+            {!isLoading && isError && <p className="error-message">Error in loading messages.</p>}
+          </div>
 
 
           {!isLoading && !isError && <div className="message-container">

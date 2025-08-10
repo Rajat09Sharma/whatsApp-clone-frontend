@@ -56,8 +56,11 @@ export default function ChatList({ chats, onChats, onSelect, selected }) {
                 </div>
             </div>
 
-            {isLoading && <p>Loading Chats......</p>}
-            {!isLoading && isError && <p>Error in loading chats.</p>}
+            <div className="info-container">
+                {isLoading && <p className="loading-message">Loading Chats......</p>}
+                {!isLoading && isError && <p className="error-message">Error in loading chats.</p>}
+            </div>
+
 
             {!isLoading && !isError && chats.map((chat) => (
                 <div

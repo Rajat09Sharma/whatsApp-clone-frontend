@@ -1,0 +1,18 @@
+/* Parent container styling */
+.info-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+/* Message styles */
+.error-message {
+  color: red;
+  font-weight: 500;
+}
+
+.loading-message {
+  color: blue;
+  font-weight: 500;
+}
